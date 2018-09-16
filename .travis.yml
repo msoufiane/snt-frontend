@@ -1,16 +1,18 @@
 language: node_js
+env:
+  global:
+    secure: xvAnloVf5TagqDTqhhcuyCUII3r3smnNHkUgeLaLmTZ2aSUQb1//sn+altBN3QVEbL4qozA2qKOJSCEYXeLtuqnXgrHIkBR3aD1UFou1yvSjaG+57i1UhfI9pp2qbRTjZ8w3EVigcMqx/iEaT1Pg5PaKzggyl2OW9rfNWB/Sv9c97N4mbFAY4V6kqjWOS+YL0F1vXtfZFwaF+HGZoE8e5RFOpCdyTcr0p0heJrVFd6yHaKxnkSvOylPoGDHX5Qv64l9Y+kMsoZ5j8oWF0PouwlYRk90uPHG33gD5Ef7hI9T3XAWslM7uRQLDBo80fpdZPO2a97/fevpy259qafYDNMiwm3TuYIslQzdZu+1U2Df+6ypKwwfUhrADfNjAF4SoQAaE2r4hZKd6r2YP+0sVHCJUDKKgVaL5+ktlBJNUCxo3nmMf2r30D11Jr91Ln3TXcWUyg/YQie85cozjcGT/Mctu7Ey3JuRrb/viUj+Jc6jYC4zh+geCf4p1Yy72tVKcKrL1G0Iq/ds1Lc8H2zyQjjmOoAHq4DBWArtcRf8a2xdjxhyC4rNLu5JtjwCehi3SSBeCytnpkHslXhIiGqtwN8SG0s+PWBNnZdXvAFfj3b7dNYAmhherI4/g+HPsO+FbvzI751Q4mdFDJBBrPLZ3I2b/z0zMwN3AUnfGhzu7fT0=
 node_js:
-  - "stable"
+  - stable
 cache:
   directories:
     - node_modules
-env:
-  global:
-    - CC_TEST_REPORTER_ID=b51d3c60edb8600c7604b45cd3d9341ec50c8f47e3ef83d90c0d15c173deb61a
+notifications:
+  email: false
 jobs:
   include:
     - stage: Tests
-      name: "Unit Tests"
+      name: Unit Tests
       before_script:
         - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
         - chmod +x ./cc-test-reporter
@@ -19,5 +21,5 @@ jobs:
       after_script:
         - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
     - stage: Build
-      name: "Production Build"
+      name: Production Build
       script: yarn build
