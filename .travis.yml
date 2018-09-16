@@ -4,6 +4,12 @@ node_js:
 cache:
   directories:
     - node_modules
-script:
-  - npm test
-  - npm run build
+
+jobs:
+  include:
+    - stage: Tests
+      name: "Unit Tests"
+      script: yarn test --coverage
+    - stage: Build
+      name: "Production Build"
+      script: yarn build
