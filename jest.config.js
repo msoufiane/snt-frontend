@@ -3,7 +3,7 @@ module.exports = {
     "src/**/*.{js,jsx,mjs}",
     "!src/registerServiceWorker.js",
     "!src/index.js",
-    "!src/setuoTests.js"
+    "!src/setupTests.js"
   ],
   setupFiles: ["<rootDir>/config/polyfills.js"],
   testMatch: [
