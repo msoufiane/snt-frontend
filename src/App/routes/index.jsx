@@ -1,9 +1,9 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 
-//import { AuthenticatedRoute, LoginScreen } from "../../Authentication";
+import { AuthenticatedRoute, LoginScreen } from "../../Authentication";
 
-//import { NotFoundPage } from "../../Layout";
+import { HomePage, NotFoundPage } from "../../Layout";
 
 // import { DashboardPage } from "../../Dashboard";
 // import { OffersPage } from "../../Offers";
@@ -28,19 +28,20 @@ import { Route, Switch } from "react-router-dom";
 export default function Routes() {
   return (
     <Switch>
-      (// sidebar links)
-      <Route component={null} activeMenuItem="" />
-    </Switch>
-  );
-}
-/*
-<Route path="/login" component={LoginScreen} />
+      <Route path="/login" component={LoginScreen} />
       <AuthenticatedRoute
         exact
         path="/"
         component={HomePage}
         activeMenuItem=""
       />
+      (// sidebar links)
+      <Route component={NotFoundPage} activeMenuItem="" />
+    </Switch>
+  );
+}
+/*
+
 <AuthenticatedRoute
         exact
         path="/dashboard"
