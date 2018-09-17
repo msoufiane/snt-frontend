@@ -32,4 +32,5 @@ jobs:
         api_key:
           secure: kvaF1MEa8vClU7wgTeq7A+Bfz9TVR7vzVYiMlMBdn0oZ/kxwIjKsKAnHpq3fW0qhnfpNrjS7Y8a4qKhsmG7YWVSE2TbI+l8WusxEFNYY8vnZFPVioRNa8iLmqlcmsCwBml9TrcPDBpX/8qAkGlPJ7wOwXGYcpjbjtmb0DPqg8iGBuSbJ4n0diuDE5lO8VA1s+augwDvq97IET5TfkQO1wvnF92Mo7XyENm1X9luSmaOvURmWXfnqLpXQu4CwWfyou4pycApMJ080j3Vt9B1vR8X4RIXnQ5BKqmvOP8WJLi8G8Fx8UrBECjZLaOLhlEXHIEBzAFr4WUiif3f16HnxgvbX9G+BDq9/gWHrNioliDKEo90K3yx1MIxdvHiqQ3x6ehXnvOmAAJf2Jr6dVghkPIcO39pLUAQApqZR6RSskTmg5d7LRk2b8TWwrYKq4vHL+JwGa3o30iHFcMkt7LE3kn1QonheN5pSYl1+34+7OYQKKU94adK5Ho7s2Il+mzG3Lq9RehgP7pWYHJCmibe0U4Ul2WIWyGoQJw3l8VVKtD2HqRTsfNRJHqnnRkJL5VMGvcHu8Uy0kUjvSyDsiS+jbChnUq2Nlane6peFE2BG6tXrsBxhmQ0z0DLMQx/8Y69BIPFVYyrxA9mdzO8NG0xmSmAPwJWk9oGZXC6KlLNNKls=
         on:
-          repo: msoufiane/master
+          repo: msoufiane/snt-frontend
+          branch: master
