@@ -91,9 +91,12 @@
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,mjs}",
-      "!src/App/registerServiceWorker.js",
       "!src/index.js",
-      "!src/setupTests.js"
+      "!src/setupTests.js",
+      "!src/App/registerServiceWorker.js",
+      "!src/App/rootReducer/index.jsx",
+      "!src/App/store/index.jsx",
+      "!src/App/routes/index.jsx"
     ],
     "setupFiles": [
       "<rootDir>/config/polyfills.js"
