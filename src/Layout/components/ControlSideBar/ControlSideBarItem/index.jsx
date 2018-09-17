@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
-const MenuItem = function MenuItem(props) {
+const ControlSideBarItem = function MenuItem(props) {
   const { active: Active, link, logo, text } = props;
 
   return (
@@ -17,11 +17,11 @@ const MenuItem = function MenuItem(props) {
   );
 };
 
-MenuItem.propTypes = {
+ControlSideBarItem.propTypes = {
   active: PropTypes.bool.isRequired,
   link: PropTypes.string.isRequired,
   logo: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired
 };
 
-export default MenuItem;
+export default ControlSideBarItem;
