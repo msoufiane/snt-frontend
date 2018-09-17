@@ -31,7 +31,7 @@ require("admin-lte");
 
 const GRAPHQL_URI =
   process.env.NODE_ENV === "production"
-    ? "/graphql"
+    ? "http://api.sentad.com/graphql"
     : "http://localhost:8000/graphql";
 const httpLink = new HttpLink({
   uri: GRAPHQL_URI,
