@@ -1,5 +1,5 @@
 import React from "react";
-import PropTypes from "prop-types";
+//import PropTypes from "prop-types";
 
 // import {
 //   AppWrapper,
@@ -21,10 +21,10 @@ const App = function App(props) {
   return <div>Soufiane</div>;
 };
 
-App.propTypes = {
-  children: PropTypes.element.isRequired,
-  activeItem: PropTypes.string.isRequired
-};
+// App.propTypes = {
+//   children: PropTypes.element.isRequired,
+//   activeItem: PropTypes.string.isRequired
+// };
 
 export default App;
 /*
